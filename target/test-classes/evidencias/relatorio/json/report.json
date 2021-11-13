@@ -1,0 +1,139 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 5681000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuario esta no site Seu Barriga",
+            "match": {
+              "location": "me.wcaquino.steps.site.SiteSteps.queOUsuarioEstaNoSiteSeuBarriga()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-12T19:53:16.600Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "me.wcaquino.hooks.HookBefore.iniciandoProjeto(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login efetuado com sucesso",
+        "description": "",
+        "id": "login;login-efetuado-com-sucesso;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preenche o campo email com \"email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 27
+                }
+              ],
+              "location": "me.wcaquino.steps.login.LoginStepsAcao.preencheOCampoEmailCom(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat me.wcaquino.core.utils.leitorJson.LeitorMassaDados.PesquisaDados(LeitorMassaDados.java:40)\r\n\tat me.wcaquino.core.utils.massaDados.Acessos.\u003cinit\u003e(Acessos.java:18)\r\n\tat me.wcaquino.page.login.BarrigaLoginAcao.escreverNoCampoSenha(BarrigaLoginAcao.java:32)\r\n\tat me.wcaquino.page.login.BarrigaLoginAtividade.preencheOCampoSenhaCom(BarrigaLoginAtividade.java:14)\r\n\tat me.wcaquino.steps.login.LoginStepsAcao.preencheOCampoSenhaCom(LoginStepsAcao.java:18)\r\n\tat ✽.preenche o campo senha com \"34536\"(file:///C:/Users/Alana%20Mendes/Documentos/testes/teste_automacao/automacao-seubarriga/src/test/resources/features/Login.feature:11)\r\n",
+              "duration": 4000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "preenche o campo senha com \"34536\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"34536\"",
+                  "offset": 27
+                }
+              ],
+              "location": "me.wcaquino.steps.login.LoginStepsAcao.preencheOCampoSenhaCom(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "sera redirecionado para a pagina com a mensagem \"Bem vindo, alana!\" na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bem vindo, alana!\"",
+                  "offset": 48
+                }
+              ],
+              "location": "me.wcaquino.steps.login.LoginStepsVerificar.seraRedirecionadoParaAPaginaComAMensagemNaTela(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regressivo"
+          },
+          {
+            "name": "@login-sucesso"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      },
+      {
+        "name": "@regressivo",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 10
+        }
+      }
+    ]
+  }
+]
